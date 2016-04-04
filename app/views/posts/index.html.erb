@@ -1,0 +1,19 @@
+
+<h2> Welcome To General Help! </h2>
+
+<%= link_to "Add New", new_post_path %>
+
+<table>
+  <tbody>
+<% @posts.each do |post| %>
+ <tr>
+  <td><%= post.user_name %></td>
+  <td><%= post.class_type %></td>
+  <td><%= post.level %></td>
+
+  <td><%= post.comment %></td>
+
+</tr>
+  <% end %>
+</tbody>
+</table>

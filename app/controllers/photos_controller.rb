@@ -5,7 +5,13 @@ def new
 end
 
 def create
- current_user.photos.new(photo_params)
+ @photo = current_user.photos.new(photo_params)
+
+ if @photo.save
+   redirect_to photo_path(@photo)
+ else
+   render :new
+ end
 end
 
 private

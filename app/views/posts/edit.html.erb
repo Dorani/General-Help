@@ -1,1 +1,14 @@
 <h1>Please edit your post here</h1>
+
+
+ <%= simple_form_for @post do |form| %>
+
+  <%= form.input :user_name %>
+  <%= form.input :class_type, :collection =>['WDI','ADI','UXDI','PMI'] %>
+  <%= form.input :level, :collection =>['Graduate', 'Active']%>
+  <%= form.input :comment %>
+  <%= form.submit %>
+
+<% end %>
+
+<%= link_to "See all posts", posts_path %>

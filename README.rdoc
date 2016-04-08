@@ -1,28 +1,32 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User stories:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- As a user I can register my account.
+- As a user with an account I can make my General Help profile
+- As a user I can upload a profile picture
+- As a user I am required to input my github and linkdin links
+- As a user I input my information
+- As a user I choose whether I'm a grad or active student.
+- Over time, as a user I will need to be able to update my profile.
+- As a user when my profile is being set I click submit to be redirected
+to my 1st post as help or support.
+- As a user I can filter by immersive type
+- As a user I can choose whether I want to be set help or support.
+- As a user I can create a message
+- As a user I can edit a message
+- As a user I can post a message
+- As a user I can delete my message
+- As a user I can see other people's post
+- As a user I can see other all the posts by filter
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Abstract:
+
+#General Help is:
+
+- Social media platform that will enable currently active immersive
+students to seek help from graduate students from the same program.
+They will be able to create their respective profiles and interact within
+their chosen channel by posting general messages. Depending on their status
+they will post about being around and able to help or in need of help.

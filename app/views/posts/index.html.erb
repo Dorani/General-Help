@@ -6,6 +6,7 @@
   <tbody>
 <% @posts.each do |post| %>
  <tr>
+
   <td><%= post.user_name %></td>
   <td><%= post.class_type %></td>
   <td><%= post.level %></td>
@@ -19,4 +20,7 @@
   <% end %>
 </tbody>
 </table>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>    
+<%= link_to('Back', welcome_index_path)  %>
+<br>
+
+<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>

@@ -2,9 +2,12 @@
 <h3> Welcome user: </h3>
  <%= current_user.email %>
  <br>
+
+ <h4>Would you like to upload a profile pic?</h4>
+    <%= link_to('Upload Photo', new_photo_path)  %>
  <h5>Please click to view post:</h5>
  <%= link_to "View Post", posts_path %>
  <% else %>
  Please Log in:
-   <%= link_to('Login', new_user_session_path)  %>  
+   <%= link_to('Login', new_user_session_path)  %>
  <%end %>

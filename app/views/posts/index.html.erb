@@ -4,8 +4,12 @@
 
 <h4>Posts:</h4>
 
+
 <% @posts.each do |post| %>
 <div class="posts">
+
+</head>
+
  <stong><%=post.user_name %></strong>
  <stong><%=post.class_type%></strong>
  <stong><%=post.level%></strong>
@@ -18,10 +22,16 @@
              method: :delete,
              data: { confirm: 'Are you sure?' } %>
 
+             <div class ="page-header">
+             <h2><center> </center> </h2>
+             </div>
+
+
 
  </div>
 
 <%end%>
+
 
 <!-- <div class ="page-header">
 <h2><center> Welcome To General Help!</center> </h2>

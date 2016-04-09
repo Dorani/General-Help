@@ -1,9 +1,17 @@
 <% if user_signed_in? %>
-<h3> Welcome user: </h3>
- <%= current_user.email %>
+<div class ="page-header">
+<h2> Welcome User:</h2>
+</div>
+ <h5> User email: </h5><%= current_user.email %>
  <br>
+ <div class ="page-header">
+ <h2> About App:</h2>
+ </div>
+<h5> This application is designed to help you find students in
+  a variety of immersive programs, ranging of all different types
+  of levels, that are seeking help AND willing to help! </h4>
+ <h4>Would you like to upload a profile pic?</h5>
 
- <h4>Would you like to upload a profile pic?</h4>
     <%= link_to('Upload Photo', new_photo_path)  %>
  <h5>Please click to view post:</h5>
  <%= link_to "View Post", posts_path %>

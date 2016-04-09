@@ -10,9 +10,21 @@
 <h5> This application is designed to help you find students in
   a variety of immersive programs, ranging of all different types
   of levels, that are seeking help AND willing to help! </h4>
- <h4>Would you like to upload a profile pic?</h5>
+
+   <div class ="page-header">
+   <h2></h2>
+   </div>
+
+   <h4>Would you like to upload a profile pic?</h5>
 
     <%= link_to('Upload Photo', new_photo_path)  %>
+
+    <%= image_tag @photo, width: "200" %>
+
+
+    <div class ="page-header">
+    <h2> </h2>
+    </div>
  <h5>Please click to view post:</h5>
  <%= link_to "View Post", posts_path %>
  <% else %>

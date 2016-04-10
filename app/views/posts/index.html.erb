@@ -4,18 +4,19 @@
 
 <h4>Posts:</h4>
 
-
 <% @posts.reverse_each do |post| %>
 <div class="posts">
 
+
 </head>
 
- <stong><%=post.user_name %></strong>
- <stong><%=post.class_type%></strong>
+ <i><p><stong><%=post.user_name %></strong></p></i>
+ <stong><ins><%=post.class_type%></ins></strong>
  <stong><%=post.level%></strong>
 
  <p> <%= post.comment %></p>
  <div class="meta">
+
    <%= link_to time_ago_in_words(post.created_at) + " ago", post %>
  |<%= link_to 'Edit', edit_post_path(post) %>
  |<%= link_to 'Destroy', post_path(post),
@@ -29,6 +30,7 @@
 
 
  </div>
+
 
 <%end%>
 

@@ -1,4 +1,4 @@
 class Photo < ActiveRecord::Base
-  belongs_to :user
+  has_one :user
   mount_uploader :file, PhotoUploader
 end

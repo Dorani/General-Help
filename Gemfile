@@ -17,6 +17,13 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'simple_form'
 
+group :development, :test do
+  gem 'sqlite3'
+end
+
+# group :production do
+#   gem 'pg'
+# end
 
 
 group :production,
@@ -46,13 +53,7 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :development, :test do
-  gem "sqlite3"
-end
 
-group :production do
-  gem "pf"
-end
 
 
 group :development do

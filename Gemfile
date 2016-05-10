@@ -17,10 +17,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'simple_form'
 
-group :development, :test do
-  gem 'sqlite3'
-end
 
+
+group :production,
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,6 +45,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
+
+group :development, :test do
+  gem "sqlite3"
+end
+
+group :production do
+  gem "pf"
+end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
